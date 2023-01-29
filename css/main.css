@@ -1,0 +1,561 @@
+* {margin: 0; padding: 0; font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
+img {display: block; width: 100%;}
+li {list-style: none;}
+a {color: black; text-decoration: none;}
+
+body::-webkit-scrollbar-thumb {
+  color: black;
+  background-color: white;
+}
+.screen_box {
+  width: 100%; height: 100vh;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.screen_box .app {
+  width: 70px; height: 60px;
+  background-color: #74b9ff;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+  position: absolute;
+  top: 80%; left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.screen_box .main {
+  width: 100%; height: 100%;
+  display: none;
+  position: absolute;
+  top: 0; left: 0;
+}
+.screen_box .main .loading {
+  width: 390px; height: 720px;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  z-index: 9999;
+}
+.screen_box .main .loading .txt {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 40%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main .header {
+  width: 100%; height: 50px;
+  position: fixed;
+  top: 0;
+  position: relative;
+  /*border-bottom: 1px solid #ccc;*/
+}
+.main .header .logo_box {
+  width: 70px; height: 40px;
+  position: absolute;
+  top: 5px; left: 160px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  background-color: black;
+  color: wheat;
+}
+
+.main_sheet {
+  width: 100%; height: 100%;
+  overflow-x: hidden;
+}
+
+/*---------visual_main---------*/
+.screen_box .main .visual_box {
+  width: 370px; height: 280px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 20px;
+ 
+}
+.screen_box .main .visual_box div{
+  width: 100%; height: 100%;
+  text-align: center;
+  line-height: 280px;
+  position: relative;
+}
+.screen_box .main .visual_box img {
+  opacity: 0.7;
+}
+.screen_box .main .visual_box div .txt {
+  width: 100%; height: 40px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 220px; left: 0;
+  line-height: 40px;
+}
+/*----------category_box-----------*/
+.category_box {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  margin: 40px 0; 
+}
+.category_box p {
+  text-align: center;
+  font-size: 14px;
+}
+
+/*-------contents_box-------*/
+.main .contents_box {
+  width: 370px; height: 230px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.300);
+}
+.main .contents_box img {
+  opacity: 0.6;
+}
+.main .contents_box .contents01 {
+  position: relative;
+}
+.main .contents_box .contents02 {
+  position: relative;
+}
+.main .contents_box .contents03 {
+  position: relative;
+}
+
+.main .contents_box .txt {
+  width: 100%; height: 40px;
+  background-color: rgba(0, 0, 0, 0.358);
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 180px; left: 0;
+  text-align: center;
+  line-height: 40px;
+  z-index: 999999;
+}
+.main .contents_box .contents01 img{
+  width: 320px; height: 230px;
+  margin: 0 auto;
+}
+.main .contents_box .contents02 img{
+  width: 200px; height: 230px;
+  margin: 0 auto;
+}
+.main .contents_box .contents03 img{
+  width: 280px; height: 230px;
+  margin: 0 auto;
+}
+.main .contents_box .slick-dots {
+  position: absolute;
+  bottom: -14px; left: 50%;
+  transform: translateX(-50%);
+}
+.main .contents_box .slick-dots li {
+  width: 10px; height: 10px;
+  background-color: black;
+  overflow: hidden;
+  border-radius: 5px;
+  opacity: 0.5;
+  transition: all 0.3s;
+  float: left;
+  margin: 0 8px;
+}
+.main .contents_box .slick-dots li.slick-active {
+  opacity: 1;
+}
+.main .contents_box .slick-dots li button {
+  display: none;
+}
+/*--------best-------*/
+.best_box {
+  margin-top: 80px;
+  margin-bottom: 160px;
+}
+.best_box .title {
+  margin-top: 40px;
+  text-indent: 16px;
+  font-size: 20px;
+}
+.best_food {
+  width: 95%;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+.best_food .slide {
+  width: 790px;
+  display: flex;
+}
+.best_food .b_food {
+  width: 150px; height: 220px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+.best_food .b_food:last-child {
+  margin-right: 0;
+}
+.best_snack .b_snack:last-child {
+  margin-right: 0;
+}
+.best_toy .b_toy:last-child {
+  margin-right: 0;
+}
+.best_snack {
+  width: 95%;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+.best_snack .slide {
+  width: 790px;
+  display: flex;
+}
+.best_snack .b_snack {
+  width: 150px; height: 220px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+.best_toy {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 160px;
+  overflow-y: hidden;
+}
+.best_toy .slide {
+  width: 790px;
+  display: flex;
+}
+.best_toy .b_toy {
+  width: 150px; height: 220px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+.best_box .pro_title {
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+.best_box .price {
+  font-size: 14px;
+  text-align: right;
+  color: brown;
+  margin-right: 16px;
+}
+/*---------search---------*/
+.main .header .search_box .icon {
+  width: 40px; height: 40px;
+  font-size: 24px;
+  position: absolute;
+  top: 4px; right: 10px;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 40px;
+}
+.main .search_screen {
+  width: 100%; height: 100%;
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0; left: 100%;
+  z-index: 999;
+}
+.main .search_screen .btn_close_search {
+  width: 100%; height: 50px;
+  background-color: black;
+}
+.main .search_screen .btn_close_search .icon {
+  width: 50px; height: 50px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+}
+.main .search_screen .search_blank {
+  width: 90%; height: 30px;
+  position: absolute;
+  top: 100px; left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  overflow: hidden;
+}
+.main .search_screen .search_blank .lab01 {
+  width: 90%;
+  line-height: 30px;
+  border: none;
+  text-indent: 8px;
+  color: #999;
+}
+.main .search_screen .search_blank .inner_icon {
+  width: 10%;
+}
+.main .search_screen .best_search {
+  width: 50%;
+  text-indent: 16px;
+  position: absolute;
+  top: 160px; left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.main .search_screen .best_search li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+.main .search_screen .best_search li.best01 {
+  animation-name: best_ani01;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.main .search_screen .best_search li.best02 {
+  animation-name: best_ani02;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.main .search_screen .best_search li.best03 {
+  animation-name: best_ani03;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.main .search_screen .best_search li.best04 {
+  animation-name: best_ani04;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.main .search_screen .best_search li.best05 {
+  animation-name: best_ani05;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes best_ani01 {
+  0% {opacity: 1; font-weight: bold;}
+  19% {opacity: 1; font-weight: bold;}
+  20% {opacity: 0.6; font-weight: normal;}
+  99% {opacity: 0.6; font-weight: normal;}
+  100% {opacity: 1; font-weight: normal;}
+}
+@keyframes best_ani02 {
+  0% {opacity: 0.6; font-weight: normal;}
+  19% {opacity: 0.6; font-weight: normal;}
+  20% {opacity: 1; font-weight: bold;}
+  39% {opacity: 1; font-weight: bold;}
+  40% {opacity: 0.6; font-weight: normal;}
+  100% {opacity: 0.6; font-weight: normal;}
+}
+@keyframes best_ani03 {
+  0% {opacity: 0.6; font-weight: normal;}
+  39% {opacity: 0.6; font-weight: normal;}
+  40% {opacity: 1; font-weight: bold;}
+  59% {opacity: 1; font-weight: bold;}
+  60% {opacity: 0.6; font-weight: normal;}
+  100% {opacity: 0.6; font-weight: normal;}
+}
+@keyframes best_ani04 {
+  0% {opacity: 0.6; font-weight: normal;}
+  59% {opacity: 0.6; font-weight: normal;}
+  60% {opacity: 1; font-weight: bold;}
+  79% {opacity: 1; font-weight: bold;}
+  80% {opacity: 0.6; font-weight: normal;}
+  100% {opacity: 0.6; font-weight: normal;}
+}
+@keyframes best_ani05 {
+  0% {opacity: 0.6; font-weight: normal;}
+  79% {opacity: 0.6; font-weight: normal;}
+  80% {opacity: 1; font-weight: bold;}
+  99% {opacity: 1; font-weight: bold;}
+  100% {opacity: 0.6; font-weight: normal;}
+}
+/*------footer------*/
+.footer {
+  width: 100%; height: 50px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  border-top: 1px solid #ccc;
+  background-color: white;
+}
+
+.footer li {
+  width: 20%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 50px;
+}
+
+/*--------lnb---------*/
+.screen_box .main .lnb_sheet {
+  width: 100%; height: 100%;
+  position: absolute;
+  top: 0; right: 100%;
+  z-index: 999;
+  background-color: white;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+}
+.screen_box .main .lnb_sheet .btn_close_lnb {
+  width: 100%; height: 50px;
+  background-color: black;
+}
+.screen_box .main .lnb_sheet .btn_close_lnb .icon {
+  width: 50px; height: 50px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+}
+/*-----cart_cart-----*/
+.screen_box .main .cart_sheet {
+  width: 100%; height: 100%;
+  position: absolute;
+  top: 0; left: 100%;
+  z-index: 999;
+  background-color: white;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+}
+.screen_box .main .cart_sheet .btn_close_cart {
+  width: 100%; height: 50px;
+  background-color: black;
+}
+.screen_box .main .cart_sheet .btn_close_cart .icon {
+  width: 50px; height: 50px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+}
+/*-------chat_sheet-------*/
+.screen_box .main .chat_sheet {
+  width: 100%; height: 100%;
+  position: absolute;
+  top: 0; left: 100%;
+  z-index: 999;
+  background-color: white;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+}
+.screen_box .main .chat_sheet .btn_close_chat {
+  width: 100%; height: 50px;
+  background-color: black;
+}
+.screen_box .main .chat_sheet .btn_close_chat .icon {
+  width: 50px; height: 50px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+}
+.screen_box .main .chat_sheet .dog_box .img_box img{
+  width: 80px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.screen_box .main .chat_sheet .dog_box .img_box .txt_box {
+  text-align: center;
+  color: #999;
+}
+.screen_box .main .chat_sheet .detail_box {
+  padding-left: 40px;
+  margin-top: 20px;
+}
+.screen_box .main .chat_sheet .share_info {
+  width: 100%;
+  border-top: 1px solid #000;
+  position: absolute;
+  bottom: 0; left: 0;
+}
+.screen_box .main .chat_sheet .share_info .btn_box {
+  display: flex;
+}
+.screen_box .main .chat_sheet .share_info .btn_box .btn {
+  width: 25%; height: 60px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  line-height: 60px;
+}
+.screen_box .main .chat_sheet .share_info .btn_box .btn:last-child {
+  border-right: none;
+}
+.screen_box .main .chat_sheet .share_info .info_box {
+  height: 240px;
+}
+.screen_box .main .chat_sheet .share_info .info_box .detail_info {
+  width: 80%; height: 40px;
+  position: absolute;
+  bottom: 0; left: 0;
+  border-top: 1px solid black;
+}
+.screen_box .main .chat_sheet .share_info .info_box .detail_info input {
+  width: 100%; height: 40px;
+  border: none; 
+}
+.screen_box .main .chat_sheet .share_info .info_box .enter {
+  width: 20%; height: 40px;
+  position: absolute;
+  bottom: 0; right: 0;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  text-align: center;
+  line-height: 40px;
+}
+
+
+/*--------login---------*/
+.screen_box .main .login_sheet { 
+  width: 100%; height: 100%;
+  position: absolute;
+  top: 0; left: 100%;
+  z-index: 999;
+  background-color: white;
+}
+.screen_box .main .login_sheet .btn_close_login {
+  width: 100%; height: 50px;
+  background-color: black;
+  box-sizing: border-box;
+}
+.screen_box .main .login_sheet .btn_close_login .icon {
+  width: 50px; height: 50px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+}
+.screen_box .main .login_sheet .txt {
+  position: absolute;
+  top: 100px; left: 50%;
+  transform: translateX(-50%); 
+}
+.screen_box .main .login_sheet .blank_box {
+  width: 50%;
+  position: absolute;
+  top: 160px; left: 50%;
+  transform: translateX(-50%);
+}
+.screen_box .main .login_sheet .blank_box input {
+  width: 100%; height: 30px;
+  margin-bottom: 10px;
+}
+.screen_box .main .login_sheet .blank_box .ent_login {
+  width: 100%; height: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.screen_box .main .login_sheet .blank_box .btn_join {
+  width: 100%; height: 30px;
+  background-color: #ccc;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
