@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
   top: 0; left: 0;
 }
 .screen_box .main .loading {
-  width: 390px; height: 720px;
+  width: 100%; height: 100%;
   background-color: rgba(0, 0, 0, 0.85);
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -410,6 +410,22 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   line-height: 50px;
 }
+.screen_box .main .lnb_sheet .m1 {
+  margin-left: 20px;
+  margin-top: 100px;
+}
+.screen_box .main .lnb_sheet .m2 {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.screen_box .main .lnb_sheet .m3 {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.screen_box .main .lnb_sheet li {
+  margin-bottom: 10px;
+}
+
 /*-----cart_cart-----*/
 .screen_box .main .cart_sheet {
   width: 100%; height: 100%;
