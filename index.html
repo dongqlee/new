@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/main.js" defer></script>
+  <script src="./js/jquery.js" defer></script>
+  <!--jquery-->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+  <!--slick-->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+  <!--font-->
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+  <div class="screen_box">
+    <div class="app">APP</div>
+   
+    <div class="main">
+      <div class="loading">
+        <p class="txt">LOADING</p>
+      </div>
+      <div class="header">
+        <div class="logo_box">
+          P
+        </div>
+        <div class="search_box">
+          <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="main_sheet">
+        <div class="visual_box">
+          <div class="vs_01">
+            <img src="./images/walk.jpg" alt="">
+            <p class="txt">
+              우리동네 산책로
+            </p>
+          </div>
+          <div class="vs_02">
+            <img src="./images/hospital.jpg" alt="">
+            <p class="txt">
+              우리동네 동물병원
+            </p>
+          </div>  
+          <div class="vs_03">
+            <img src="./images/wear.jpg" alt="">
+            <p class="txt">
+              산책 용품
+            </p>
+          </div>  
+          <div class="vs_04">
+            <img src="./images/toy.jpg" alt="">
+            <p class="txt">
+              장난감
+            </p>
+          </div>  
+        </div>
+        
+        <div class="category_box">
+          <div class="cate01">
+            <div class="cate_img">
+              <img src="./images/cate01.webp" alt="">
+            </div>
+            <p class="cate_txt">사료</p>
+          </div>
+          <div class="cate02">
+            <div class="cate_img">
+              <img src="./images/cate02.webp" alt="">
+            </div>
+            <p class="cate_txt">간식</p>
+          </div>
+          <div class="cate03">
+            <div class="cate_img">
+              <img src="./images/cate03.webp" alt="">
+            </div>
+            <p class="cate_txt">외출용품</p>
+          </div>
+          <div class="cate04">
+            <div class="cate_img">
+              <img src="./images/cate04.webp" alt="">
+            </div>
+            <p class="cate_txt">장난감</p>
+          </div>
+          <div class="cate05">
+            <div class="cate_img">
+              <img src="./images/cate05.webp" alt="">
+            </div>
+            <p class="cate_txt">배변/탈취</p>
+          </div>
+        </div>
+        
+        <div class="contents_box">
+          <div class="contents01">
+            <img src="./images/contents01.jpg" alt="">
+            <p class="txt">
+              유기동물 입양
+            </p>
+          </div>
+          <div class="contents02">
+            <img src="./images/contents02.jpg" alt="">
+            <p class="txt">
+              임시보호
+            </p>
+          </div>
+          <div class="contents03">
+            <img src="./images/contents03.jpg" alt="">
+            <p class="txt">
+              정기후원
+            </p>
+          </div>
+        </div>
+        <div class="best_box">
+          <p class="title">Best 사료</p>  
+          <div class="best_food">
+            <div class="slide">
+              <div class="b_food">
+                <img src="./images/food_01.webp" alt="강아지 사료 이미지1">
+                <div class="txt_box">
+                  <p class="pro_title">ANF 캔(독) 치킨비프 95g</p>
+                  <p class="price">1,800원</p>
+                </div>
+              </div>
+              <div class="b_food">
+                <img src="./images/food_02.webp" alt="강아지 사료 이미지2">
+                <div class="txt_box">
+                  <p class="pro_title">달링키친 100g 오리</p>
+                  <p class="price">5,500원</p>
+                </div>
+              </div>
+              <div class="b_food">
+                <img src="./images/food_03.webp" alt="강아지 사료 이미지3">
+                <div class="txt_box">
+                  <p class="pro_title">시저 캔 닭고기 100g</p>
+                  <p class="price">1,600원</p>
+                </div>
+              </div>
+              <div class="b_food">
+                <img src="./images/food_04.webp" alt="강아지 사료 이미지4">
+                <div class="txt_box">
+                  <p class="pro_title">팜스코 웰비스타 모던 5kg</p>
+                  <p class="price">13,800원</p>
+                </div>
+              </div>
+              <div class="b_food">
+                <img src="./images/food_05.webp" alt="강아지 사료 이미지5">
+                <div class="txt_box">
+                  <p class="pro_title">시저 칠면조살코기 성견용 1kg</p>
+                  <p class="price">10,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="title">Best 간식</p>
+          <div class="best_snack">
+            <div class="slide">
+              <div class="b_snack">
+                <img src="./images/snack_01.webp" alt="강아지 간식 이미지1">
+                <div class="txt_box">
+                  <p class="pro_title">피크닉 소세지 오리 11p</p>
+                  <p class="price">2,100원</p>
+                </div>
+              </div>
+              <div class="b_snack">
+                <img src="./images/snack_02.webp" alt="강아지 간식 이미지2">
+                <div class="txt_box">
+                  <p class="pro_title">수심 동결건조 트릿 (통) 치즈 150g</p>
+                  <p class="price">8,000원</p>
+                </div>
+              </div>
+              <div class="b_snack">
+                <img src="./images/snack_03.webp" alt="강아지 간식 이미지3">
+                <div class="txt_box">
+                  <p class="pro_title">메타멍스 면역력 75g</p>
+                  <p class="price">2,000원</p>
+                </div>
+              </div>
+              <div class="b_snack">
+                <img src="./images/snack_04.webp" alt="강아지 간식 이미지4">
+                <div class="txt_box">
+                  <p class="pro_title">오사사미 400g 사사미 스틱껌</p>
+                  <p class="price">6,600원</p>
+                </div>
+              </div>
+              <div class="b_snack">
+                <img src="./images/snack_05.webp" alt="강아지 간식 이미지5">
+                <div class="txt_box">
+                  <p class="pro_title">닥터펫 우피 치킨껌 6P</p>
+                  <p class="price">1,400원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="title">Best 장난감</p>
+          <div class="best_toy">
+            <div class="slide">
+              <div class="b_toy">
+                <img src="./images/toy_01.webp" alt="강아지 장난감 이미지1">
+                <div class="txt_box">
+                  <p class="pro_title">스쿼커 덴탈토이</p>
+                  <p class="price">3,200원</p>
+                </div>
+              </div>
+              <div class="b_toy">
+                <img src="./images/toy_02.webp" alt="강아지 장난감 이미지2">
+                <div class="txt_box">
+                  <p class="pro_title">실타래 장난감 개구리</p>
+                  <p class="price">3,500원</p>
+                </div>
+              </div>
+              <div class="b_toy">
+                <img src="./images/toy_03.webp" alt="강아지 장난감 이미지3">
+                <div class="txt_box">
+                  <p class="pro_title">프리미엄 BBQ 장난감 S</p>
+                  <p class="price">8,700원</p>
+                </div>
+              </div>
+              <div class="b_toy">
+                <img src="./images/toy_04.webp" alt="강아지 장난감 이미지4">
+                <div class="txt_box">
+                  <p class="pro_title">발바닥 하트 실타래 장난감</p>
+                  <p class="price">1,400원</p>
+                </div>
+              </div>
+              <div class="b_toy">
+                <img src="./images/toy_05.webp" alt="강아지 장난감 이미지5">
+                <div class="txt_box">
+                  <p class="pro_title">스포티볼(스퀴커) 2P</p>
+                  <p class="price">4,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+      
+      <ul class="footer">
+        <li class="lnb"><i class="fa-solid fa-bars"></i></li>
+        <li class="cart"><i class="fa-solid fa-cart-shopping"></i></li>
+        <li class="home">
+          <a href="./index.html">
+            <i class="fa-solid fa-house"></i>
+          </a>
+        </li>
+        <li class="chat"><i class="fa-solid fa-comment"></i></li>
+        <li class="login"><i class="fa-solid fa-user"></i></li>
+      </ul>
+      
+      <div class="lnb_sheet">
+        <div class="btn_close_lnb">
+          <div class="icon">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+        </div>
+
+        <ul>
+          <li class="m1">
+            <ul>
+              <li class="m1_01">우리동네 산책로</li>
+              <li class="m1_02">우리동네 동물병원</li>
+            </ul>
+          </li>
+          <li class="m2">
+            <ul>
+              <li class="m2_01">사료</li>
+              <li class="m2_01">간식</li>
+              <li class="m2_02">장난감</li>
+              <li class="m2_03">외출용품</li>
+              <li class="m2_04">배변용품</li>
+            </ul>
+          </li>
+          <li class="m3">
+            <ul>
+              <li class="m3_01">유기동물 입양하기</li>
+              <li class="m3_02">유기동물 정기후원하기</li>
+              <li class="m3_03">임시보호</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="search_screen">
+        <div class="btn_close_search">
+          <div class="icon">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+        </div>
+        <div class="search_blank">
+          <input type="text" placeholder="검색어를 입력해주세요." class="lab01">
+          <span class="inner_icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+        </div>
+        <ul class="best_search">
+          <li class="best01"> 1. 간식</li>
+          <li class="best02"> 2. 장난감</li>
+          <li class="best03"> 3. 산책로</li>
+          <li class="best04"> 4. 사료</li>
+          <li class="best05"> 5. 외출용품</li>
+        </ul>
+      </div>
+      <div class="cart_sheet">
+        <div class="btn_close_cart">
+          <div class="icon">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="chat_sheet">
+        <div class="btn_close_chat">
+          <div class="icon">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+        </div>
+        <div class="dog_box">
+          <div class="img_box">
+            <img src="./images/camera.png" alt="카메라 이미지">
+            <div class="txt_box">
+              <span class="dog"><i class="fa-solid fa-dog"></i></span>
+            <span class="txt">사진을 등록해주세요.</span>
+            </div>
+            
+          </div>
+          <ul class="detail_box">
+            <li class="name">이름 :</li>
+            <li class="age">나이 :</li>
+            <li class="gender">성별 :</li>
+            <li class="desc">특징 :</li>
+          </ul>
+
+          <div class="share_info">
+            <div class="btn_box">
+              <div class="walk btn">
+                <div>
+                  <i class="fa-solid fa-dog"></i>
+                </div>
+              </div>
+              <div class="food btn">
+                <div><i class="fa-solid fa-bowl-food"></i></div>
+              </div>
+              <div class="snack btn">
+                <div><i class="fa-solid fa-bone"></i></div>
+              </div>
+              <div class="photo btn">
+                <div><i class="fa-solid fa-camera"></i></div>
+              </div>
+            </div>
+            <div class="info_box">
+              <div class="walk_info">
+
+              </div>
+              <div class="food_info">
+
+              </div>
+              <div class="snack_info">
+
+              </div>
+              <div class="photo_info">
+
+              </div>
+
+              <div class="detail_info">
+                <input type="text" placeholder="추가 내용 입력">
+              </div>
+              <div class="enter">
+                등록
+              </div>
+            </div>
+ 
+          </div>
+        </div>
+
+      </div>
+
+      <div class="login_sheet">
+        <div class="btn_close_login">
+          <div class="icon">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+        </div>
+        <div class="txt">LOGIN</div>
+        <div class="blank_box">
+          <div class="id_blank">
+            <input type="text" placeholder="아이디">
+          </div>
+          <div class="pw_blank">
+            <input type="pw" placeholder="비밀번호">
+          </div>
+          <div class="ent_login">
+            로그인
+          </div>
+          <div class="btn_join">
+            회원가입
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
